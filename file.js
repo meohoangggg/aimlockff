@@ -1,27 +1,22 @@
+// ---------------------------
 // myscript.js
-// Shadowrocket JS Script cho Free Fire
-// Chạy khi Shadowrocket bắt request từ các host trong sgmodule
+// Dành cho Shadowrocket Module Free Fire
+// ---------------------------
 
-(function() {
-    console.log("==== Free Fire Script Loaded ====");
+// ---- Chỗ bạn điền Base64 ----
+let myBase64 = "MjRiZjIyNTEwODJlZWMwOWY3YWQ0MmI4YmRkY2NiOWJlYTk2NjFkODM0Y2I2MDFlMTRjYTJiYjRkZDIxNTYwNmI1MzI5NmZjYTQ1NWIyZWNkMjliYmJjODU1ZTY5MjZiMTEzMzRjOTQ2NGI2YzNjOWE2M2Y4NGY3ZDljZjBkZWQ";
 
-    // --- Log Response ---
-    if ($response && $response.body) {
-        try {
-            let data = JSON.parse($response.body);
-            console.log("Response JSON:", data);
-        } catch (e) {
-            console.log("Response không phải JSON:", $response.body);
-        }
-    }
+// Giải mã Base64 thành chuỗi
+try {
+    let decoded = atob(myBase64);
+    console.log("Decoded Base64:", decoded);
 
-    // --- Log Request ---
-    if ($request) {
-        console.log("Request URL:", $request.url);
-        console.log("Request Method:", $request.method);
-        if ($request.body) console.log("Request Body:", $request.body);
-    }
+    // TODO: Xử lý tiếp dữ liệu decoded ở đây nếu muốn
+    // Ví dụ: parse JSON, thay đổi request, log thông tin...
+} catch (e) {
+    console.log("Lỗi decode Base64:", e);
+}
 
-    MjRiZjIyNTEwODJlZWMwOWY3YWQ0MmI4YmRkY2NiOWJlYTk2NjFkODM0Y2I2MDFlMTRjYTJiYjRkZDIxNTYwNmI1MzI5NmZjYTQ1NWIyZWNkMjliYmJjODU1ZTY5MjZiMTEzMzRjOTQ2NGI2YzNjOWE2M2Y4NGY3ZDljZjBkZWQ
+// Hàm kiểm tra module đã load
+console.log("Shadowrocket Free Fire Script Loaded");
 
-})();
