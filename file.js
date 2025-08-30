@@ -4,7 +4,7 @@
 // ---------------------------
 
 // ---- Chỗ bạn điền Base64 ----
-let myBase64 = "MTA3ZTFlMmFlMmNlM2RmY2NlYjMwZGRhZTA0YTRmOTM0Y2JlODNmNDY3M2QzYTlmZWFjYzU1MmIwZDdmYjA0ZjhhZDkzMjVkNTNmMzI3ODdmZjczNThmOWFmNTBjOTMxNDc4YmMzMmQ4NDAyMDY5NTk5YmRlMmNmYTg5M2FlZTc";
+let myBase64 = "ZjkwN2MwNDRjNGJiODZiZjVkNzVlNzQzMGM3NzdkN2U4MTI5ZjlmNGE2ZGQ5MmU2OTc4YWNkYzhkMzMxZmE5MTQyMzIyYmUyZjJiMGQwOTE1ZDJlMDQwZTdiZjE4ZDUwYjZhN2FjM2FlNGJkZWJhN2Y5NDgyNTQxMjZkMTFjMzI";
 
 // Giải mã Base64 thành chuỗi
 try {
@@ -19,6 +19,7 @@ try {
 
 // Hàm kiểm tra module đã load
 console.log("Shadowrocket Free Fire Script Loaded");
+
 
 
 
